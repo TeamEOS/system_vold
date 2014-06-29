@@ -20,7 +20,7 @@
 #ifdef __cplusplus
 #include <utils/List.h>
 #include <fs_mgr.h>
-
+#include <sys/types.h>
 class NetlinkEvent;
 class VolumeManager;
 
@@ -28,6 +28,7 @@ class Volume {
 private:
     int mState;
     int mFlags;
+    char* mOpts;
 
 public:
 #endif
